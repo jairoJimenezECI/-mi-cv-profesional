@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jairo Jiménez - Sr Data Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme & Language Controls -->
+    <div class="controls">
+        <button id="themeToggle" class="control-btn" aria-label="Toggle theme">
+            <span class="icon">🌙</span>
+        </button>
+        <button id="langToggle" class="control-btn" aria-label="Toggle language">
+            <span class="lang-text">ES</span>
+        </button>
+    </div>
+
+    <!-- Animated Background -->
+    <canvas id="dataCanvas"></canvas>
+
+    <!-- Header -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-photo">
+                    <div class="photo-placeholder">
+                        <span class="initials">JJ</span>
+                    </div>
+                    <div class="photo-upload-hint" data-en="Add your photo: Replace this with your image" data-es="Agrega tu foto: Reemplaza esto con tu imagen">Add your photo: Replace this with your image</div>
+                </div>
+                <h1 class="glitch" data-text="JAIRO JIMÉNEZ">JAIRO JIMÉNEZ</h1>
+                <p class="subtitle" data-en="Sr Data Scientist" data-es="Sr Data Scientist">Sr Data Scientist</p>
+                <p class="contact">
+                    <a href="mailto:jairo.jimenez-f@mail.escuelaing.edu.co">📧 jairo.jimenez-f@mail.escuelaing.edu.co</a>
+                    <span class="location">📍 <span data-en="Zipaquirá, Colombia" data-es="Zipaquirá, Colombia">Zipaquirá, Colombia</span></span>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#about" data-en="About" data-es="Acerca de">About</a></li>
+                <li><a href="#skills" data-en="Skills" data-es="Habilidades">Skills</a></li>
+                <li><a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a></li>
+                <li><a href="#experience" data-en="Experience" data-es="Experiencia">Experience</a></li>
+                <li><a href="#education" data-en="Education" data-es="Educación">Education</a></li>
+                <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-en="Professional Summary" data-es="Resumen Profesional">Professional Summary</h2>
+            <div class="about-content">
+                <div class="summary-card">
+                    <h3 data-en="Career Objective" data-es="Objetivo de Carrera">Career Objective</h3>
+                    <p data-en="Leverage 10+ years of experience in Data Science and Machine Learning to drive innovation in AI technologies, with a focus on LLM applications, user behavior analysis, and advanced statistical modeling. Currently expanding expertise through a Master's in Computer Science while contributing to cutting-edge projects in AI vulnerability assessment and intelligent systems."
+                       data-es="Aprovechar más de 10 años de experiencia en Ciencia de Datos y Aprendizaje Automático para impulsar la innovación en tecnologías de IA, con enfoque en aplicaciones LLM, análisis de comportamiento de usuarios y modelado estadístico avanzado. Actualmente expandiendo experiencia a través de una Maestría en Informática mientras contribuyo a proyectos de vanguardia en evaluación de vulnerabilidades de IA y sistemas inteligentes.">
+                       Leverage 10+ years of experience in Data Science and Machine Learning to drive innovation in AI technologies, with a focus on LLM applications, user behavior analysis, and advanced statistical modeling. Currently expanding expertise through a Master's in Computer Science while contributing to cutting-edge projects in AI vulnerability assessment and intelligent systems.
+                    </p>
+                </div>
+                
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🎯</div>
+                        <div class="highlight-content">
+                            <h4 data-en="Expertise" data-es="Experiencia">Expertise</h4>
+                            <p data-en="Machine Learning, Deep Learning, Statistical Analysis, LLM Evaluation" data-es="Aprendizaje Automático, Aprendizaje Profundo, Análisis Estadístico, Evaluación de LLM">Machine Learning, Deep Learning, Statistical Analysis, LLM Evaluation</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🚀</div>
+                        <div class="highlight-content">
+                            <h4 data-en="Impact" data-es="Impacto">Impact</h4>
+                            <p data-en="Led data science teams across 3 countries, developed user value models for millions of users" data-es="Lideré equipos de ciencia de datos en 3 países, desarrollé modelos de valor de usuario para millones de usuarios">Led data science teams across 3 countries, developed user value models for millions of users</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">📚</div>
+                        <div class="highlight-content">
+                            <h4 data-en="Continuous Learning" data-es="Aprendizaje Continuo">Continuous Learning</h4>
+                            <p data-en="Master's student, specialized in Data Mining, Statistics background" data-es="Estudiante de Maestría, especializado en Minería de Datos, formación en Estadística">Master's student, specialized in Data Mining, Statistics background</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title" data-en="Technical Skills" data-es="Habilidades Técnicas">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="python">
+                    <div class="skill-icon">🐍</div>
+                    <h3>Python</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                </div>
+                <div class="skill-card" data-skill="r">
+                    <div class="skill-icon">📊</div>
+                    <h3>R</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-card" data-skill="sql">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>SQL</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-card" data-skill="spark">
+                    <div class="skill-icon">⚡</div>
+                    <h3>Spark</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-card" data-skill="docker">
+                    <div class="skill-icon">🐳</div>
+                    <h3>Docker</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-card" data-skill="pytorch">
+                    <div class="skill-icon">🔥</div>
+                    <h3>PyTorch</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                </div>
+                <div class="skill-card" data-skill="airflow">
+                    <div class="skill-icon">🌊</div>
+                    <h3>Airflow</h3>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 82%"></div></div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <h3 class="subsection-title" data-en="Languages" data-es="Idiomas">Languages</h3>
+            <div class="languages">
+                <div class="language-item">
+                    <span data-en="Spanish" data-es="Español">Spanish</span>
+                    <div class="lang-dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <span data-en="English" data-es="Inglés">English</span>
+                    <div class="lang-dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                    </div>
+                </div>
+                <div class="language-item">
+                    <span data-en="German" data-es="Alemán">German</span>
+                    <div class="lang-dots">
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-en="Featured Projects" data-es="Proyectos Destacados">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Projects will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title" data-en="Professional Experience" data-es="Experiencia Profesional">Professional Experience</h2>
+            <div class="timeline">
+                <!-- Experience items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title" data-en="Education" data-es="Educación">Education</h2>
+            <div class="education-grid">
+                <!-- Education items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-en="Get In Touch" data-es="Contacto">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3 data-en="Email" data-es="Correo">Email</h3>
+                            <a href="mailto:jairo.jimenez-f@mail.escuelaing.edu.co">jairo.jimenez-f@mail.escuelaing.edu.co</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3 data-en="Location" data-es="Ubicación">Location</h3>
+                            <p data-en="Zipaquirá, Colombia" data-es="Zipaquirá, Colombia">Zipaquirá, Colombia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <h3 data-en="Work Status" data-es="Estado Laboral">Work Status</h3>
+                            <p data-en="Open to opportunities" data-es="Abierto a oportunidades">Open to opportunities</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🎓</div>
+                        <div>
+                            <h3 data-en="Current Study" data-es="Estudio Actual">Current Study</h3>
+                            <p data-en="Master's in Computer Science" data-es="Maestría en Informática">Master's in Computer Science</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-cta">
+                    <p data-en="Interested in collaborating on Data Science or Machine Learning projects? Let's connect!" 
+                       data-es="¿Interesado en colaborar en proyectos de Ciencia de Datos o Aprendizaje Automático? ¡Conectemos!">
+                       Interested in collaborating on Data Science or Machine Learning projects? Let's connect!
+                    </p>
+                    <a href="mailto:jairo.jimenez-f@mail.escuelaing.edu.co" class="cta-button">
+                        <span data-en="Send Message" data-es="Enviar Mensaje">Send Message</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-en="© 2026 Jairo Jiménez. Built with passion for data science." 
+               data-es="© 2026 Jairo Jiménez. Construido con pasión por la ciencia de datos.">
+               © 2026 Jairo Jiménez. Built with passion for data science.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

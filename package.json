@@ -1,0 +1,29 @@
+{
+  "name": "jairo-jimenez-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio profesional de Jairo Jiménez - Sr Data Scientist. Sitio web estático de una sola página con modo claro/oscuro y soporte bilingüe (Inglés/Español).",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "data-science",
+    "machine-learning",
+    "static-website",
+    "single-page"
+  ],
+  "author": {
+    "name": "Jairo Jiménez",
+    "email": "jairo.jimenez-f@mail.escuelaing.edu.co"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/portfolio.git"
+  }
+}

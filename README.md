@@ -73,8 +73,17 @@ Este es un sitio web portfolio profesional de una sola página (single-page) com
 ├── index.html                  # Estructura HTML principal
 ├── styles.css                  # Estilos y variables de tema
 ├── script.js                   # Funcionalidad interactiva y animaciones
-├── README.md                   # Este archivo (documentación)
+├── server.js                   # Servidor Node.js para Azure App Service
+├── package.json                # Configuración del proyecto Node.js
+├── .gitignore                  # Archivos excluidos de Git
+└── README.md                   # Este archivo (documentación)
 ```
+
+### Archivos Principales
+
+- **index.html, styles.css, script.js**: El sitio web estático
+- **server.js**: Servidor HTTP simple para servir archivos estáticos en Azure
+- **package.json**: Metadatos del proyecto y configuración para Azure App Service
 
 ---
 
@@ -120,7 +129,7 @@ Luego navega a `http://localhost:8000` en tu navegador.
      - **Grupo de recursos**: Crea uno nuevo o usa uno existente
      - **Nombre**: Elige un nombre único (ej: `jairo-jimenez-portfolio`)
      - **Publicar**: Código
-     - **Pila del entorno de ejecución**: Node 18 LTS (o cualquier runtime - servimos archivos estáticos)
+     - **Pila del entorno de ejecución**: Node 24 LTS (o cualquier runtime - servimos archivos estáticos)
      - **Sistema operativo**: Linux
      - **Región**: Elige la más cercana a tu audiencia
      - **Plan de precios**: F1 Gratis o B1 Básico
@@ -154,13 +163,13 @@ Luego navega a `http://localhost:8000` en tu navegador.
 
 4. **Crea la Aplicación Web**
    ```bash
-   az webapp create --resource-group portfolio-rg --plan portfolio-plan --name jairo-jimenez-portfolio --runtime "NODE:18-lts"
+   az webapp create --resource-group portfolio-rg --plan portfolio-plan --name jairo-jimenez-portfolio --runtime "NODE:24-lts"
    ```
 
 5. **Despliega usando ZIP**
    ```bash
-   # Primero, crea un archivo zip de tu proyecto
-   zip -r portfolio.zip index.html styles.css script.js
+   # Crea un archivo zip con todos los archivos necesarios
+   zip -r portfolio.zip index.html styles.css script.js server.js package.json
    
    # Despliega el archivo zip
    az webapp deployment source config-zip --resource-group portfolio-rg --name jairo-jimenez-portfolio --src portfolio.zip
@@ -207,7 +216,7 @@ Luego navega a `http://localhost:8000` en tu navegador.
    - Contraseña: De las credenciales anteriores
 
 3. **Sube los archivos**
-   - Sube index.html, styles.css y script.js a `/site/wwwroot/`
+   - Sube index.html, styles.css, script.js, server.js y package.json a `/site/wwwroot/`
 
 ---
 
